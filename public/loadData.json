@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/0fBbnbF/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg",
+      "title": "Penthouse",
+      "description": "Experience unparalleled luxury in this stunning Penthouse offering breathtaking city views. Located in the heart of New York City, this expansive 3000 sqft residence features lavish interiors, state-of-the-art amenities, and impeccable design. Enjoy the ultimate urban retreat with spacious living areas, a private swimming pool, fully-equipped gym, and personalized concierge service. Whether you're relaxing in the elegant lounge or entertaining guests in the grand dining room, every detail exudes sophistication and opulence. Indulge in the epitome of upscale living with this extraordinary Penthouse, where every moment is a testament to refined elegance and unparalleled comfort.",
+      "price": 5000,
+      "status": "sale",
+      "area": "3000 sqft",
+      "location": "New York City",
+      "facilities": ["Living room", "Swimming pool", "Gym", "Concierge service"]
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/RpFXHjC/beautiful-outdoor-view-with-umbrella.jpg",
+      "title": "Beachfront Property",
+      "description": "Escape to paradise with this exquisite Beachfront Property nestled along the pristine shores of Malibu. Spanning 5000 sqft, this luxurious residence offers unparalleled oceanfront living with direct access to the sandy beaches. Bask in the sun by the infinity pool or unwind in the private spa overlooking the Pacific Ocean. With spacious living areas, a gourmet kitchen, and panoramic views from every room, this coastal retreat redefines luxury living. Whether hosting lavish gatherings or enjoying intimate moments with loved ones, this Beachfront Property offers the ultimate blend of serenity and sophistication.",
+      "price": 8000,
+      "status": "sale",
+      "area": "5000 sqft",
+      "location": "Malibu",
+      "facilities": ["Living room", "Infinity pool", "Private beach access", "Spa"]
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/Vv49ZzS/swimming-pool-beach-luxury-hotel-outdoor-pools-spa-amara-dolce-vita-luxury-hotel-resort-tekirova-kem.jpg",
+      "title": "Resort",
+      "description": "Experience the epitome of tropical luxury at this exclusive Resort in Bora Bora. Nestled amidst lush tropical gardens and azure waters, this lavish retreat offers an unparalleled escape from the ordinary. Boasting private villas, beachfront dining, rejuvenating spa treatments, and exhilarating water sports, every moment is filled with indulgence and adventure. Whether you're lounging by the infinity pool or exploring the vibrant marine life, this Resort promises an unforgettable experience for discerning travelers seeking serenity and sophistication in paradise.",
+      "price": 10000,
+      "status": "rent",
+      "area": "10 acres",
+      "location": "Bora Bora",
+      "facilities": ["Private villas", "Beachfront restaurant", "Spa", "Water sports"]
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/hftVFK7/beautiful-umbrella-chair-around-swimming-pool-hotel-resort.jpg",
+      "title": "Private Island",
+      "description": "Escape to your own private sanctuary with this exclusive Private Island in the Caribbean. Spanning 20 acres of pristine coastline, this secluded paradise offers unrivaled luxury and tranquility. Indulge in the ultimate island lifestyle with luxurious villas, a private helipad, yacht dock, and lush tropical gardens. Whether you're relaxing in the infinity pool overlooking the crystal-clear waters or exploring the vibrant coral reefs, every moment is a testament to refined elegance and serenity. Experience the pinnacle of luxury living on your own private island retreat, where every desire is effortlessly fulfilled.",
+      "price": 20000,
+      "status": "sale",
+      "area": "20 acres",
+      "location": "Caribbean",
+      "facilities": ["Luxury villas", "Helipad", "Yacht dock", "Tropical gardens"]
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/f4KwdDk/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg",
+      "title": "Villa",
+      "description": "Discover the ultimate Tuscan retreat with this elegant Villa nestled amidst the rolling hills of Tuscany. Offering panoramic views of the picturesque countryside, this luxurious residence boasts 4000 sqft of impeccable design and unparalleled comfort. From the outdoor terrace overlooking the vineyards to the infinity pool surrounded by lush gardens, every detail exudes sophistication and charm. Indulge in the finest culinary experiences with a private chef service and explore the rich cultural heritage of the region. Whether you're hosting intimate gatherings or enjoying peaceful moments of relaxation, this Villa offers a timeless escape in the heart of Italy.",
+      "price": 6000,
+      "status": "rent",
+      "area": "4000 sqft",
+      "location": "Tuscany",
+      "facilities": ["Outdoor terrace", "Infinity pool", "Wine cellar", "Chef service"]
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/5BFTcLw/miami-luxury-house.jpg",
+      "title": "Mansion",
+      "description": "Experience grandeur and sophistication with this magnificent Mansion in the heart of Los Angeles. Spanning 15000 sqft, this palatial estate offers opulent interiors, sprawling gardens, and unparalleled luxury. From the grand ballroom and state-of-the-art home theater to the private tennis court and fragrant rose gardens, every aspect of this estate exudes elegance and charm. Indulge in the ultimate entertainment with a wine cellar, outdoor kitchen, and panoramic views of the iconic city skyline. Whether hosting extravagant events or enjoying quiet moments of relaxation, this Mansion offers a timeless retreat for discerning homeowners.",
+      "price": 15000,
+      "status": "sale",
+      "area": "15000 sqft",
+      "location": "Los Angeles",
+      "facilities": ["Ballroom", "Home theater", "Tennis court", "Rose garden"]
+    }
+  ]
+  
