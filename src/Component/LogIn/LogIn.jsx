@@ -11,7 +11,7 @@ const LogIn = () => {
 
   return (
     <div className="hero min-h-screen bg-[url('https://i.ibb.co/8Yy1q1S/hotel.jpg')]  ">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col lg:flex-row gap-x-20">
         <div className="text-center lg:text-left">
           {/* <img src={"https://i.ibb.co/yhL09F2/1237.jpg"} alt="" /> */}
           <div className="flex justify-center">
