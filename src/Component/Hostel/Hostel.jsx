@@ -7,10 +7,9 @@ AOS.init();
 const Hostel = ({ hostel }) => {
   const { id, image, title, price, status, location } = hostel;
   return (
-    <div className="border w-1/3 " data-aos="zoom-in" data-aos-duration="1000">
-      <h1>this is single hostel:{hostel.length}</h1>
-      <div className=" flex">
-        <div className="w-1/2">
+    <div className="border" data-aos="zoom-in" data-aos-duration="1000">
+      <div>
+        <div>
           <img data-aos="zoom-in" data-aos-duration="1000" src={image} alt="" />
         </div>
         <div>

@@ -35,7 +35,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar   mb-7">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,14 +81,14 @@ const Navbar = () => {
       {/* Login and log out button with conditional */}
       {user ? (
         <div className="navbar-end">
-          <a onClick={handleSignOut} className="btn btn-secondary">
+          <a onClick={handleSignOut} className="btn bg-red-600 text-white">
             Log Out
           </a>
         </div>
       ) : (
         <div className="navbar-end">
           <Link to={"/login"}>
-            <a className="btn btn-secondary">Log in</a>
+            <a className="btn bg-black text-white">Log in</a>
           </Link>
         </div>
       )}

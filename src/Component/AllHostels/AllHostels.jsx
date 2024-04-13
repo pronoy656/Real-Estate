@@ -9,13 +9,13 @@ const AllHostels = () => {
       .then((data) => setHostels(data));
   }, []);
   return (
-    <div>
-      <h1>This is all hostels details page</h1>
-      <div className="">
+    <div className="mt-16 flex gap-x-5">
+      <div className="grid grid-cols-2 gap-x-4 w-2/3">
         {hostels.map((hostel) => (
           <Hostel key={hostel.id} hostel={hostel}></Hostel>
         ))}
       </div>
+      <p className="border w-1/3">hiihihihihihiihihi</p>
     </div>
   );
 };
