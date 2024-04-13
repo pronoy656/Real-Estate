@@ -21,6 +21,16 @@ const Navbar = () => {
           <a>About</a>
         </NavLink>
       </li>
+      <li>
+        <NavLink to={"/userprofile"}>
+          <a>User Profile</a>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to={"/updateProfile"}>
+          <a>Update Profile</a>
+        </NavLink>
+      </li>
     </>
   );
 
