@@ -4,8 +4,12 @@ import { BsFacebook } from "react-icons/bs";
 import { GrInstagram } from "react-icons/gr";
 import { BsTwitterX } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/Authprovider";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+
   const handleRegister = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -13,8 +17,20 @@ const Register = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(name, photo, email, password);
+
+    // userCreate
+    createUser(email, password)
+      .then((userCreate) => {
+        const user = userCreate.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
   };
-  // https://i.ibb.co/G2V0nVv/8245.jpg
+
   return (
     <div className="hero min-h-screen bg-[url('https://i.ibb.co/wyt6dxb/3.jpg')]">
       <div className="hero-content flex-col lg:flex-row ml-24 gap-x-64">

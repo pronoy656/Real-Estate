@@ -7,25 +7,17 @@ AOS.init();
 const Hostel = ({ hostel }) => {
   const { id, image, title, price, status, location } = hostel;
   return (
-    <div className="border w-1/3">
+    <div className="border w-1/3 " data-aos="zoom-in" data-aos-duration="1000">
       <h1>this is single hostel:{hostel.length}</h1>
       <div className=" flex">
         <div className="w-1/2">
           <img data-aos="zoom-in" data-aos-duration="1000" src={image} alt="" />
         </div>
         <div>
-          <p data-aos="fade-left" data-aos-delay="1000">
-            Title:{title}
-          </p>
-          <p data-aos="fade-left" data-aos-delay="2000">
-            Price:{price}$
-          </p>
-          <p data-aos="fade-left" data-aos-delay="3000">
-            Status:{status}
-          </p>
-          <p data-aos="fade-left" data-aos-delay="8000">
-            Location:{location}
-          </p>
+          <p>Title:{title}</p>
+          <p>Price:{price}$</p>
+          <p>Status:{status}</p>
+          <p>Location:{location}</p>
         </div>
       </div>
       <div className="flex justify-end">
