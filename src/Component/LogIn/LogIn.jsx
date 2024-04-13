@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/Authprovider";
 
 const LogIn = () => {
-  const { userLogIn } = useContext(AuthContext);
+  const { userLogIn, signInWithGoogle } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   console.log("location from lopicajhbjhsgrbfjd", location);
@@ -22,6 +22,19 @@ const LogIn = () => {
       })
       .catch((error) => {
         console.error(error);
+      });
+  };
+
+  const handleSignInWithGoogle = () => {
+    signInWithGoogle()
+      .then((googleUser) => {
+        const userGoogle = googleUser.user;
+        console.log(userGoogle);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        const errorCode = error.code;
+        console.log(errorMessage, errorCode);
       });
   };
 
@@ -68,6 +81,14 @@ const LogIn = () => {
             </div>
             <div className="form-control mt-6">
               <button className="btn bg-black text-white">Login</button>
+            </div>
+            <div>
+              <button
+                onClick={handleSignInWithGoogle}
+                className="btn btn-outline"
+              >
+                Google
+              </button>
             </div>
             <p>
               Do You Have any Account? Please{" "}
