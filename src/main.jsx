@@ -12,6 +12,7 @@ import LogIn from "./Component/LogIn/LogIn.jsx";
 import Register from "./Component/Register/Register.jsx";
 import HosteiDetails from "./Component/HostelDetails/HosteiDetails.jsx";
 import Authprovider from "./AuthProvider/Authprovider.jsx";
+import PrivateRoute from "./Component/PrivateRoute/PrivateRoute.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/hostelDetails/:id",
-        element: <HosteiDetails></HosteiDetails>,
+        element: (
+          <PrivateRoute>
+            <HosteiDetails></HosteiDetails>
+          </PrivateRoute>
+        ),
         loader: () =>
           fetch("https://pronoy656.github.io/assignment-9/loadData.json"),
       },
