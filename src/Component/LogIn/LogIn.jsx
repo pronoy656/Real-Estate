@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/Authprovider";
 
 const LogIn = () => {
-  const { userLogIn, signInWithGoogle } = useContext(AuthContext);
+  const { userLogIn, signInWithGoogle, signInWithGithub } =
+    useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   console.log("location from lopicajhbjhsgrbfjd", location);
@@ -30,6 +31,20 @@ const LogIn = () => {
       .then((googleUser) => {
         const userGoogle = googleUser.user;
         console.log(userGoogle);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        const errorCode = error.code;
+        console.log(errorMessage, errorCode);
+      });
+  };
+  // github signin
+
+  const handleSignInWithGithub = () => {
+    signInWithGithub()
+      .then((githubUser) => {
+        const userGithub = githubUser.user;
+        console.log(userGithub);
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -88,6 +103,14 @@ const LogIn = () => {
                 className="btn btn-outline"
               >
                 Google
+              </button>
+            </div>
+            <div>
+              <button
+                onClick={handleSignInWithGithub}
+                className="btn btn-outline"
+              >
+                Github
               </button>
             </div>
             <p>
