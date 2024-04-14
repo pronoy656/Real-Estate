@@ -97,23 +97,38 @@ const LogIn = () => {
             <div className="form-control mt-6">
               <button className="btn bg-black text-white">Login</button>
             </div>
-            <div>
-              <button
-                onClick={handleSignInWithGoogle}
-                className="btn btn-outline"
-              >
-                Google
-              </button>
+            <div className="text-center mt-3 text-base">
+              <p className="text-lg font-semibold">
+                -------------------Or--------------------
+              </p>
             </div>
-            <div>
-              <button
-                onClick={handleSignInWithGithub}
-                className="btn btn-outline"
-              >
-                Github
-              </button>
+            <div className="flex justify-center gap-x-6 mt-4 mb-4">
+              <div>
+                <button
+                  onClick={handleSignInWithGoogle}
+                  className="btn btn-outline rounded-full"
+                >
+                  <img
+                    className="w-11 h-11 rounded-full"
+                    src="https://i.ibb.co/nDFx6YT/png-clipart-google-google-thumbnail.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div>
+                <button
+                  onClick={handleSignInWithGithub}
+                  className="btn btn-outline rounded-full"
+                >
+                  <img
+                    className="w-11 h-11 rounded-full"
+                    src="https://i.ibb.co/c2xSwqw/Git-Hub-Mark-ea2971cee799.png"
+                    alt=""
+                  />
+                </button>
+              </div>
             </div>
-            <p>
+            <p className="text-base font-semibold">
               Do You Have any Account? Please{" "}
               <Link to={"/register"}>
                 <span className="text-red-600">Register</span>
