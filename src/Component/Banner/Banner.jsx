@@ -4,7 +4,7 @@ const Banner = () => {
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full h-[420px] relative">
           <img
-            src="https://i.ibb.co/k828xSh/Screenshot-2024-04-15-221550.png"
+            src="https://i.ibb.co/Dkhq6pv/Screenshot-2024-04-15-220643.png"
             className="w-full"
           />
         </div>
@@ -16,7 +16,7 @@ const Banner = () => {
         </div>
         <div id="item4" className="carousel-item w-full h-[420px]">
           <img
-            src="https://i.ibb.co/Dkhq6pv/Screenshot-2024-04-15-220643.png"
+            src=" https://i.ibb.co/k828xSh/Screenshot-2024-04-15-221550.png"
             className="w-full"
           />
         </div>
