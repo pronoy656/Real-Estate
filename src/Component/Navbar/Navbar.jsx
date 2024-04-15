@@ -81,6 +81,16 @@ const Navbar = () => {
       {/* Login and log out button with conditional */}
       {user ? (
         <div className="navbar-end">
+          <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
+            <div className="w-12 rounded-full mr-3">
+              <img
+                className="rounded-full"
+                alt="Tailwind CSS Navbar component"
+                src={user.photoURL}
+              />
+            </div>
+          </div>
+          ;
           <a onClick={handleSignOut} className="btn bg-red-600 text-white">
             Log Out
           </a>
