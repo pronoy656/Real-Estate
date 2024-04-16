@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
 const About = () => {
   return (
     <div>
@@ -5,7 +8,7 @@ const About = () => {
         className="hero min-h-screen"
         style={{
           backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+            "url(https://i.ibb.co/d6vbSnn/comfortable-modern-bedroom-with-elegant-decoration-lighting-generative-ai-1.jpg)",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
@@ -13,19 +16,23 @@ const About = () => {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
             <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              We gave you high-quality experience, personalized service, and a
+              sense of exclusivity, encouraging visitors to learn more about
+              what the hotel has to offer.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button className="btn bg-[#ffa135]">Explore More</button>
           </div>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center mt-9 mb-9">
         <h1 className="text-[#ffa135] text-3xl font-semibold">TESTIMONIALS</h1>
         <p className="text-2xl mt-4">Our client Review</p>
       </div>
-      <div className="md:flex justify-center gap-x-7">
+      <div
+        className="md:flex justify-center gap-x-7 "
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <div className="border w-72 relative bg-slate-200 text-black rounded-2xl mt-36 p-4">
           <div className="absolute -top-14 left-16 mb-5">
             <img
