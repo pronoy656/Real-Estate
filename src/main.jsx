@@ -15,6 +15,7 @@ import Authprovider from "./AuthProvider/Authprovider.jsx";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute.jsx";
 import UserProfile from "./Component/UserPRofile/UserProfile.jsx";
 import UpdateProfile from "./Component/UpdateProfile/UpdateProfile.jsx";
+import Booking from "./Component/Booking/Booking.jsx";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <UpdateProfile></UpdateProfile>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/booking",
+        element: (
+          <PrivateRoute>
+            <Booking></Booking>
           </PrivateRoute>
         ),
       },
