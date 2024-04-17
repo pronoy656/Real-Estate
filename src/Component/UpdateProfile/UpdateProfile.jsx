@@ -21,9 +21,9 @@ const UpdateProfile = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200 mb-9">
+      <div className="hero min-h-screen bg-base-200 bg-[url('https://i.ibb.co/pQK3db3/update-profile.jpg')] mb-9">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left text-white">
             <h1 className="text-5xl font-bold">Update Profile</h1>
             <p className="py-6">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda

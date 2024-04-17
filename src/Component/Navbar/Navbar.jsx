@@ -40,7 +40,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar   mb-7">
+    <div className="navbar bg-[url('https://i.ibb.co/6PrQfkJ/hhhhhh.jpg')]  mb-7">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white"
           >
             {navLink}
           </ul>
@@ -81,7 +81,9 @@ const Navbar = () => {
         {/* <a className="btn btn-ghost text-xl text-[#BEAD8E]">daisyUI</a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLink}</ul>
+        <ul className="menu menu-horizontal px-1 text-white font-semibold text-lg">
+          {navLink}
+        </ul>
       </div>
       {/* Login and log out button with conditional */}
       {user ? (

@@ -6,7 +6,7 @@ const UserProfile = () => {
   const { user } = useContext(AuthContext);
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen bg-base-200 bg-[url('https://i.ibb.co/HNT7pHP/fancy-blue-bg.jpg')]">
         <div className="hero-content ">
           <div className="text-center lg:text-left">
             <img
