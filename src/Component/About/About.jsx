@@ -1,5 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import "animate.css";
 
 const About = () => {
   return (
@@ -14,18 +15,24 @@ const About = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
+            <h1 className="mb-5 text-5xl font-bold animate__animated animate__bounce">
+              Hello there
+            </h1>
+            <p className="mb-5 animate__animated animate__bounce">
               We gave you high-quality experience, personalized service, and a
               sense of exclusivity, encouraging visitors to learn more about
               what the hotel has to offer.
             </p>
-            <button className="btn bg-[#ffa135]">Explore More</button>
+            <button className="btn bg-[#ffa135] animate__animated animate__bounce">
+              Explore More
+            </button>
           </div>
         </div>
       </div>
       <div className="text-center mt-9 mb-9">
-        <h1 className="text-[#ffa135] text-3xl font-semibold">TESTIMONIALS</h1>
+        <h1 className="text-[#ffa135] text-3xl font-semibold animate__animated animate__bounce">
+          TESTIMONIALS
+        </h1>
         <p className="text-2xl mt-4">Our client Review</p>
       </div>
       <div

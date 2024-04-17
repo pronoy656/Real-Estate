@@ -18,7 +18,7 @@ const Booking = () => {
       <p className="text-center mt-16 text-5xl font-medium text-black">
         Coupon Code
       </p>
-      <div className="flex justify-center items-center gap-x-28 mt-14">
+      <div className="flex justify-center items-center gap-x-28 mt-14 animate__heartBeat">
         <div>
           <img
             className="w-[400px] h-[200px]"
@@ -104,9 +104,11 @@ const Booking = () => {
       </div>
 
       {/* accordion */}
-      <p className="text-center mt-20 text-4xl font-medium text-black">
+      <p className="text-center mt-20 text-4xl font-medium text-black animate__animated animate__bounce">
         Feel Free To Ask <br />
-        <span className="text-black">Any Question ?</span>{" "}
+        <span className="text-black animate__animated animate__bounce">
+          Any Question ?
+        </span>{" "}
       </p>
       <div className="md:flex justify-center gap-x-20 mt-16 mb-16 items-center">
         <div className="w-1/2">

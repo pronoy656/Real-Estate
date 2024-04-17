@@ -67,7 +67,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to={"/"}>
-          <div className="flex items-center btn">
+          <div className="flex items-center btn animate__backInLeft">
             <img
               className="w-[50px] h-[40px] rounded-full"
               src="https://i.ibb.co/pn2Vnq6/hotellogo.webp"

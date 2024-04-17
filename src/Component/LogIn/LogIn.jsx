@@ -7,6 +7,11 @@ import { IoEyeOff } from "react-icons/io5";
 const LogIn = () => {
   const { userLogIn, signInWithGoogle, signInWithGithub } =
     useContext(AuthContext);
+
+  // State declare for password validation
+  const [loginError, setLoginError] = useState("");
+  const [loginSuccessfull, setLogInSuccessFull] = useState("");
+
   const location = useLocation();
   const navigate = useNavigate();
   console.log("location from lopicajhbjhsgrbfjd", location);
@@ -18,15 +23,33 @@ const LogIn = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(email, password);
+
+    // // error message vanish after success
+    setLoginError("");
+    setLogInSuccessFull("");
+
+    // password validation before call firebase
+    if (password.length < 6) {
+      setLoginError("Password Should be at least 6 characters ");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setLoginError("Must have an Upper case letter in the password");
+      return;
+    } else if (!/[a-z]/.test(password)) {
+      setLoginError("Must have an lower case letter in the password");
+      return;
+    }
+
     userLogIn(email, password)
       .then((userLogin) => {
         console.log(userLogIn.user);
-
+        setLogInSuccessFull("Login Successfully");
         // Navigate after login
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
+        setLoginError(error.message);
       });
   };
 
@@ -104,6 +127,12 @@ const LogIn = () => {
                 {showPassword ? <IoEyeOff /> : <IoEye />}
               </span>
             </div>
+            {loginError && (
+              <p className="text-red-600 font-medium mt-3">{loginError}</p>
+            )}
+            {loginSuccessfull && (
+              <p className="text-green-500 font-medium">{loginSuccessfull}</p>
+            )}
             <div className="form-control mt-6">
               <button className="btn bg-black text-white">Login</button>
             </div>
