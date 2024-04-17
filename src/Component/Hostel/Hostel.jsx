@@ -23,10 +23,15 @@ const Hostel = ({ hostel }) => {
           />
         </div>
         <div>
-          <p>Title:{title}</p>
-          <p>Price:{price}$</p>
-          <p>Status:{status}</p>
-          <p>Location:{location}</p>
+          <p className="text-2xl font-semibold mt-3">Title:{title}</p>
+          <p className="text-xl font-medium mt-3">Price:{price}$</p>
+          <p className="text-xl font-medium mt-3">
+            Status:{" "}
+            <span className="bg-red-600 text-white p-2 rounded-2xl">
+              {status}
+            </span>
+          </p>
+          <p className="text-xl font-medium mt-3">Location:{location}</p>
         </div>
       </div>
       <div className="flex justify-end">

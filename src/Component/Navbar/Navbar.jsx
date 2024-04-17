@@ -40,7 +40,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-[url('https://i.ibb.co/6PrQfkJ/hhhhhh.jpg')]  mb-7">
+    <div className="navbar   mb-7">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -81,7 +81,7 @@ const Navbar = () => {
         {/* <a className="btn btn-ghost text-xl text-[#BEAD8E]">daisyUI</a> */}
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-white font-semibold text-lg">
+        <ul className="menu menu-horizontal px-1 text-black font-semibold text-lg">
           {navLink}
         </ul>
       </div>
