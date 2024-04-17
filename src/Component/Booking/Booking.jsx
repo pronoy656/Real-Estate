@@ -15,6 +15,26 @@ const Booking = () => {
         src="https://i.ibb.co/vDxkzkp/8720250.jpg"
         alt=""
       />
+      <p className="text-center mt-16 text-5xl font-medium text-black">
+        Coupon Code
+      </p>
+      <div className="flex justify-center items-center gap-x-28 mt-14">
+        <div>
+          <img
+            className="w-[400px] h-[200px]"
+            src="https://i.ibb.co/yQY0nQC/ticket-2.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="w-[400px] h-[200px]"
+            src="https://i.ibb.co/kX7fDH8/ticket.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
       {/* Service section */}
 
       <div>
