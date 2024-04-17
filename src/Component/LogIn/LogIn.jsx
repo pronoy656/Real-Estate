@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/Authprovider";
+import { IoEye } from "react-icons/io5";
+import { IoEyeOff } from "react-icons/io5";
 
 const LogIn = () => {
   const { userLogIn, signInWithGoogle, signInWithGithub } =
@@ -8,6 +10,8 @@ const LogIn = () => {
   const location = useLocation();
   const navigate = useNavigate();
   console.log("location from lopicajhbjhsgrbfjd", location);
+  // State declaration for toggle eye button
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -82,17 +86,23 @@ const LogIn = () => {
                 required
               />
             </div>
-            <div className="form-control">
+            <div className="form-control relative">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="password"
                 name="password"
                 className="input input-bordered"
                 required
               />
+              <span
+                className="absolute mt-12 right-4 text-xl"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <IoEyeOff /> : <IoEye />}
+              </span>
             </div>
             <div className="form-control mt-6">
               <button className="btn bg-black text-white">Login</button>

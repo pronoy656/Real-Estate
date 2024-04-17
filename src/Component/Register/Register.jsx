@@ -4,11 +4,15 @@ import { BsFacebook } from "react-icons/bs";
 import { GrInstagram } from "react-icons/gr";
 import { BsTwitterX } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/Authprovider";
+import { IoEye } from "react-icons/io5";
+import { IoEyeOff } from "react-icons/io5";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  // state declare for show eye icon
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -101,17 +105,18 @@ const Register = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="password"
                 name="password"
                 className="input input-bordered"
                 required
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
+              <span
+                className="absolute mt-12 right-8 text-xl"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <IoEyeOff /> : <IoEye />}
+              </span>
             </div>
             <div className="form-control mt-6">
               <button className="btn bg-black text-white">Register</button>
