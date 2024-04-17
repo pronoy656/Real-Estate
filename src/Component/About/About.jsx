@@ -1,10 +1,14 @@
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import "animate.css";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>Hotel Rio | about</title>
+      </Helmet>
       <div
         className="hero min-h-screen"
         style={{

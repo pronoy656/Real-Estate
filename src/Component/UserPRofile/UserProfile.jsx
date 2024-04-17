@@ -1,11 +1,15 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/Authprovider";
+import { Helmet } from "react-helmet-async";
 
 const UserProfile = () => {
   const { user } = useContext(AuthContext);
   return (
     <div>
+      <Helmet>
+        <title>Hotel Rio | User Profile</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200 bg-[url('https://i.ibb.co/HNT7pHP/fancy-blue-bg.jpg')]">
         <div className="hero-content flex-col md:flex-row">
           <div className="text-center lg:text-left">

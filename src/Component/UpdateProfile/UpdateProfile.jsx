@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/Authprovider";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
   const { updateUserProfile, user, setUser } = useContext(AuthContext);
@@ -21,6 +22,9 @@ const UpdateProfile = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Hotel Rio | Update Profile</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200 bg-[url('https://i.ibb.co/pQK3db3/update-profile.jpg')] mb-9">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left text-white">

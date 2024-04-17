@@ -8,6 +8,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/Authprovider";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
@@ -59,6 +60,9 @@ const Register = () => {
 
   return (
     <div className="hero min-h-screen bg-[url('https://i.ibb.co/wyt6dxb/3.jpg')]">
+      <Helmet>
+        <title>Hotel Rio | Register</title>
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row ml-24 gap-x-64">
         <div className="border md:w-[560px] md:-mt-36">
           <img

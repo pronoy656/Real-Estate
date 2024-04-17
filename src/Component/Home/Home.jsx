@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AllHostels from "../AllHostels/AllHostels";
 import Banner from "../Banner/Banner";
 import AOS from "aos";
@@ -6,6 +7,9 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Hotel Rio | Home</title>
+      </Helmet>
       <Banner></Banner>
       <AllHostels></AllHostels>
       <div className="mt-10 mb-9">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const HosteiDetails = () => {
@@ -11,6 +12,9 @@ const HosteiDetails = () => {
   // console.log(id, allHostelDetails);
   return (
     <div className="md:flex justify-center gap-x-12 mt-14 mb-12">
+      <Helmet>
+        <title>Hotel Rio | Details</title>
+      </Helmet>
       <div className="md:w-[573px]">
         <img className="rounded-2xl" src={singleDetails.image} alt="" />
       </div>

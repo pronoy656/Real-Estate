@@ -6,10 +6,14 @@ import { FaParking } from "react-icons/fa";
 import { FaHospital } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import Marquee from "react-fast-marquee";
+import { Helmet } from "react-helmet-async";
 
 const Booking = () => {
   return (
     <div>
+      <Helmet>
+        <title>Hotel Rio | Booking</title>
+      </Helmet>
       <img
         className="h-[480px] w-full"
         src="https://i.ibb.co/vDxkzkp/8720250.jpg"
