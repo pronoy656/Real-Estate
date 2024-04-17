@@ -13,6 +13,10 @@ const Register = () => {
   const { createUser } = useContext(AuthContext);
   // state declare for show eye icon
   const [showPassword, setShowPassword] = useState(false);
+  // State declare for password validation
+  const [registerError, setRegisterError] = useState("");
+  // state declare for success message
+  const [success, setSuccess] = useState("");
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -22,16 +26,34 @@ const Register = () => {
     const password = e.target.password.value;
     console.log(name, photo, email, password);
 
+    // error message vanish after success
+    setRegisterError("");
+    setSuccess("");
+
+    // password validation before call firebase
+    if (password.length < 6) {
+      setRegisterError("Password Should be at least 6 characters ");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegisterError("Must have an Upper case letter in the password");
+      return;
+    } else if (!/[a-z]/.test(password)) {
+      setRegisterError("Must have an lower case letter in the password");
+      return;
+    }
+
     // userCreate
     createUser(email, password)
       .then((userCreate) => {
         const user = userCreate.user;
         console.log(user);
+        setSuccess("Successfully account Created");
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode, errorMessage);
+        setRegisterError(error.message);
       });
   };
 
@@ -118,6 +140,12 @@ const Register = () => {
                 {showPassword ? <IoEyeOff /> : <IoEye />}
               </span>
             </div>
+            {registerError && (
+              <p className="font-medium mt-3 text-red-600">{registerError}</p>
+            )}
+            {success && (
+              <p className="font-medium mt-3 text-green-500">{success}</p>
+            )}
             <div className="form-control mt-6">
               <button className="btn bg-black text-white">Register</button>
             </div>
