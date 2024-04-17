@@ -3,7 +3,7 @@ import { AuthContext } from "../../AuthProvider/Authprovider";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const UpdateProfile = () => {
-  const { updateUserProfile } = useContext(AuthContext);
+  const { updateUserProfile, user, setUser } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -14,6 +14,7 @@ const UpdateProfile = () => {
     console.log(name, photoUrl);
     updateUserProfile(name, photoUrl).then(() => {
       // Navigate after update
+      setUser({ ...user, displayName: name, photoURL: photoUrl });
       navigate(location?.state ? location.state : "/");
     });
   };
