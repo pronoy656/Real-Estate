@@ -103,7 +103,7 @@ const Booking = () => {
               families with children?"
             </div>
             <div className="collapse-content">
-              <p>
+              <p className="text-lg text-[#ffa135]">
                 "Yes, we have several family-friendly amenities and services
                 available. We offer a Kids' Club where children can enjoy
                 supervised activities and games, providing parents with some
@@ -118,7 +118,7 @@ const Booking = () => {
               from the airport?"
             </div>
             <div className="collapse-content">
-              <p>
+              <p className="text-lg text-[#ffa135]">
                 "We offer convenient airport shuttle services for our guests.
                 Our shuttle runs at regular intervals to and from the airport,
                 providing a hassle-free transportation option for arrivals and
