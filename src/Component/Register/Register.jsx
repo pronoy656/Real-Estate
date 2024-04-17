@@ -60,7 +60,7 @@ const Register = () => {
   return (
     <div className="hero min-h-screen bg-[url('https://i.ibb.co/wyt6dxb/3.jpg')]">
       <div className="hero-content flex-col lg:flex-row ml-24 gap-x-64">
-        <div className="border w-[560px] -mt-36">
+        <div className="border md:w-[560px] md:-mt-36">
           <img
             className="w-[85px] h-[85px] rounded-full mb-4"
             src="https://i.ibb.co/pn2Vnq6/hotellogo.webp"
@@ -84,7 +84,7 @@ const Register = () => {
             <BsWhatsapp />
           </div>
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ml-14">
+        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 md:ml-14">
           <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
               <label className="label">

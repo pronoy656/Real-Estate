@@ -10,7 +10,7 @@ const AllHostels = () => {
   }, []);
   return (
     <div className="mt-16 flex gap-5 space-y-5">
-      <div className="grid grid-cols-3 gap-x-4 gap-y-4">
+      <div className="grid md:grid-cols-3 gap-x-4 gap-y-4">
         {hostels.map((hostel) => (
           <Hostel key={hostel.id} hostel={hostel}></Hostel>
         ))}

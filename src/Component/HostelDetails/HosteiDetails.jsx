@@ -11,7 +11,7 @@ const HosteiDetails = () => {
   // console.log(id, allHostelDetails);
   return (
     <div className="md:flex justify-center gap-x-12 mt-14 mb-12">
-      <div className="w-[573px]">
+      <div className="md:w-[573px]">
         <img className="rounded-2xl" src={singleDetails.image} alt="" />
       </div>
       <div className="w-[573px]">
@@ -30,7 +30,7 @@ const HosteiDetails = () => {
             <span className="text-xl font-medium ">{facility}</span>
           </li>
         ))}
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
           <p className="text-xl font-semibold text-red-400 mt-4">
             Price:{" "}
             <span className="text-xl font-medium text-black">
@@ -44,7 +44,7 @@ const HosteiDetails = () => {
             </span>
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
           <p className="text-xl font-semibold text-red-400 mt-4">
             Area:
             <span className="text-xl font-medium text-black ml-2">
@@ -60,7 +60,7 @@ const HosteiDetails = () => {
         </div>
         <Link to={"/"}>
           {" "}
-          <button className="btn btn-outline mt-4 w-full">Back</button>
+          <button className="btn btn-outline mt-4 md:w-full">Back</button>
         </Link>
       </div>
     </div>

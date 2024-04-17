@@ -7,7 +7,7 @@ const UserProfile = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200 bg-[url('https://i.ibb.co/HNT7pHP/fancy-blue-bg.jpg')]">
-        <div className="hero-content ">
+        <div className="hero-content flex-col md:flex-row">
           <div className="text-center lg:text-left">
             <img
               className="rounded-full w-[530px] h-[400px]"

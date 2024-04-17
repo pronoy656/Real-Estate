@@ -18,7 +18,7 @@ const Booking = () => {
       <p className="text-center mt-16 text-5xl font-medium text-black">
         Coupon Code
       </p>
-      <div className="flex justify-center items-center gap-x-28 mt-14 animate__heartBeat">
+      <div className="md:flex justify-center items-center gap-x-28 mt-14 animate__heartBeat">
         <div>
           <img
             className="w-[400px] h-[200px]"
