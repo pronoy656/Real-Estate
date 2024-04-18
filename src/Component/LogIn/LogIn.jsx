@@ -4,6 +4,7 @@ import { AuthContext } from "../../AuthProvider/Authprovider";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { Helmet } from "react-helmet-async";
+import toast from "react-hot-toast";
 
 const LogIn = () => {
   const { userLogIn, signInWithGoogle, signInWithGithub } =
@@ -45,6 +46,7 @@ const LogIn = () => {
       .then((userLogin) => {
         console.log(userLogIn.user);
         setLogInSuccessFull("Login Successfully");
+        toast("Log in successfully");
         // Navigate after login
         navigate(location?.state ? location.state : "/");
       })

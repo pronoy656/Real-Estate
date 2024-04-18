@@ -17,6 +17,7 @@ import UserProfile from "./Component/UserPRofile/UserProfile.jsx";
 import UpdateProfile from "./Component/UpdateProfile/UpdateProfile.jsx";
 import Booking from "./Component/Booking/Booking.jsx";
 import { HelmetProvider } from "react-helmet-async";
+import toast, { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -85,5 +86,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <RouterProvider router={router} />
       </Authprovider>
     </HelmetProvider>
+    <Toaster></Toaster>
   </React.StrictMode>
 );

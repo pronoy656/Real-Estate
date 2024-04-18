@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-[url('https://i.ibb.co/r3hYRSp/footer.jpg')]  text-white mt-10 h-[350px]">
+      <footer className="footer p-10 bg-[url('https://i.ibb.co/r3hYRSp/footer.jpg')]  text-white mt-10 md:h-[350px]">
         <aside>
           <img
             className="w-[95px] h-[95px] rounded-full"
@@ -9,7 +9,7 @@ const Footer = () => {
             alt=""
           />
           <p>
-            ACME Industries Ltd.
+            Hotel Rio
             <br />
             Providing reliable tech since 1992
           </p>
